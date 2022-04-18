@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f15764e5-906f-4caa-9c75-27dbafd15ad7": {
+      "ProjectGuid": "f15764e5-906f-4caa-9c75-27dbafd15ad7",
+      "DisplayName": "TestBD",
+      "ColorIndex": 0
+    },
+    "6945a264-ebe4-4c7c-a8dd-4c0bb0de8c61": {
+      "ProjectGuid": "6945a264-ebe4-4c7c-a8dd-4c0bb0de8c61",
+      "DisplayName": "API_Server",
+      "ColorIndex": 1
+    },
+    "b1e1e124-833a-462a-89d7-07fa7c7487c4": {
+      "ProjectGuid": "b1e1e124-833a-462a-89d7-07fa7c7487c4",
+      "DisplayName": "Service",
+      "ColorIndex": 2
+    },
+    "80e70922-1ec0-4b55-8d9e-3263fd606f8c": {
+      "ProjectGuid": "80e70922-1ec0-4b55-8d9e-3263fd606f8c",
+      "DisplayName": "Domain",
+      "ColorIndex": 3
+    },
+    "195e5ef4-26b6-4fac-b529-afc7e34943ec": {
+      "ProjectGuid": "195e5ef4-26b6-4fac-b529-afc7e34943ec",
+      "DisplayName": "Repository",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
