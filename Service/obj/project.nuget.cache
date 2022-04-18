@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wkUAHKa+2OJX1p3vsOUdhCQywuvKC+H4qafs9QRgEgmTiJcmAaOxv3rkL0NS+QDoqMox/bvLHbIycYxbwUFUEg==",
+  "dgSpecHash": "T55kKJO8nPJ3HeRMVrp3PkjvpE6hummU6PhhsXKsXbVaSL7pQRoVFaDj2T0/y2WzFpnEqanPWEoXf6Z9D4WLFA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Service\\Service.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Service\\Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",

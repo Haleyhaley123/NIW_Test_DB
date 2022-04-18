@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\API_Server\\API_Server.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\API_Server\\API_Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\API_Server\\API_Server.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\API_Server\\API_Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\API_Server\\API_Server.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\API_Server\\API_Server.csproj",
         "projectName": "API_Server",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\API_Server\\API_Server.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\API_Server\\API_Server.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\API_Server\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\API_Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Domain\\Domain.csproj"
+              "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Service\\Service.csproj"
+              "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Service\\Service.csproj"
               }
             }
           }
@@ -106,14 +106,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Domain\\Domain.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -194,14 +194,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Repository\\Repository.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Repository\\Repository.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Repository\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -222,8 +222,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Domain\\Domain.csproj"
+              "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Domain\\Domain.csproj"
               }
             }
           }
@@ -286,14 +286,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Service\\Service.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Service\\Service.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Service\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -314,11 +314,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Domain\\Domain.csproj"
+              "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\TestDB\\Repository\\Repository.csproj"
+              "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Git File\\NIW\\TestDB\\Repository\\Repository.csproj"
               }
             }
           }

@@ -15,3 +15,20 @@ C:\Users\Admin\Desktop\NIW\testBD\TestBD\TestBD\obj\Debug\net6.0-windows\TestBD.
 C:\Users\Admin\Desktop\NIW\testBD\TestBD\TestBD\obj\Debug\net6.0-windows\ref\TestBD.dll
 C:\Users\Admin\Desktop\NIW\testBD\TestBD\TestBD\obj\Debug\net6.0-windows\TestBD.pdb
 C:\Users\Admin\Desktop\NIW\testBD\TestBD\TestBD\obj\Debug\net6.0-windows\TestBD.genruntimeconfig.cache
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\TestBD.exe
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\TestBD.deps.json
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\TestBD.runtimeconfig.json
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\TestBD.dll
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\ref\TestBD.dll
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\TestBD.pdb
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.Form1.resources
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.dll
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\ref\TestBD.dll
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.pdb
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.genruntimeconfig.cache

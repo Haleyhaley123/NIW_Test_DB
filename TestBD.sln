@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBD", "TestBD\TestBD.csproj", "{F15764E5-906F-4CAA-9C75-27DBAFD15AD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestBD", "TestBD\TestBD.csproj", "{F15764E5-906F-4CAA-9C75-27DBAFD15AD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Server", "API_Server\API_Server.csproj", "{6945A264-EBE4-4C7C-A8DD-4C0BB0DE8C61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API_Server", "API_Server\API_Server.csproj", "{6945A264-EBE4-4C7C-A8DD-4C0BB0DE8C61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{B1E1E124-833A-462A-89D7-07FA7C7487C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{B1E1E124-833A-462A-89D7-07FA7C7487C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{80E70922-1EC0-4B55-8D9E-3263FD606F8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{80E70922-1EC0-4B55-8D9E-3263FD606F8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{195E5EF4-26B6-4FAC-B529-AFC7E34943EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{195E5EF4-26B6-4FAC-B529-AFC7E34943EC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConnectAPI", "ConnectAPI", "{9DA02205-91C0-4BBC-910D-75D8FE168D2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConnectSqlDapper", "ConnectSqlDapper", "{2C4227EF-A447-4C9A-846F-623218E0A9ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectAPI", "ConnectAPI\ConnectAPI.csproj", "{F33B1E48-0FF8-4426-8DB2-F8992DB8C95F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,9 +45,16 @@ Global
 		{195E5EF4-26B6-4FAC-B529-AFC7E34943EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{195E5EF4-26B6-4FAC-B529-AFC7E34943EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{195E5EF4-26B6-4FAC-B529-AFC7E34943EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F33B1E48-0FF8-4426-8DB2-F8992DB8C95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F33B1E48-0FF8-4426-8DB2-F8992DB8C95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F33B1E48-0FF8-4426-8DB2-F8992DB8C95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F33B1E48-0FF8-4426-8DB2-F8992DB8C95F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F33B1E48-0FF8-4426-8DB2-F8992DB8C95F} = {9DA02205-91C0-4BBC-910D-75D8FE168D2E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCC070A6-3388-476F-B9F3-6910478FC0A6}

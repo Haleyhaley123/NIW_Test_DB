@@ -1,5 +1,6 @@
 ﻿using Domain;
 using Repository.IRepository;
+using Service.IService;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Service.Service
 {
-    public class StudentService
+    public class StudentService: IStudentService
     {
         private readonly IStudentRepository _iStudentRepository;
         public StudentService(IStudentRepository iStudentRepository)
@@ -19,7 +20,7 @@ namespace Service.Service
         {
             return await _iStudentRepository.GetStudent();
         }
-        public async Task<Student> GetPeopleById(int studentId)
+        public async Task<Student> GetStudentByID(int studentId)
         {
             return await _iStudentRepository.GetStudentByID(studentId);
         }
