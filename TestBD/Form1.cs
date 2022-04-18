@@ -91,7 +91,7 @@ namespace TestBD
                     Email = txtEmail.Text
                 };
 
-                bool isInsert = StudentConnectAPI.InsertPeople(student);
+                bool isInsert = StudentConnectAPI.InsertStudent(student);
                 if (isInsert)
                 {
                     MessageBox.Show("Add succesfull Data");
@@ -109,7 +109,7 @@ namespace TestBD
             DialogResult Result = MessageBox.Show("Do you want to delete?", "Notification", MessageBoxButtons.OKCancel);
             if (Result == DialogResult.OK)
             {
-                bool isInsert = DeleteStudent.DeleteData(txtStudentId.Text);
+                bool isInsert = StudentConnectAPI.DeleteStudent(Int32.Parse(txtStudentId.Text));
                 if (isInsert)
                 {
                     MessageBox.Show("Delete success data");
@@ -119,6 +119,28 @@ namespace TestBD
                     MessageBox.Show("Delete failed Data");
                 }
 
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+            var student = new Student()
+            {
+                FullName = txtFullName.Text,
+                Address = txtAddress.Text,
+                PhoneNumber = txtNumberPhone.Text,
+                Email = txtEmail.Text
+            };
+
+            bool isInsert = StudentConnectAPI.EditStudent(student);
+            if (isInsert)
+            {
+                MessageBox.Show("Edit success data");
+            }
+            else
+            {
+                MessageBox.Show("Edit failed Data");
             }
         }
     }

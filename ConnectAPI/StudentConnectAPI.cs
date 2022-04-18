@@ -48,13 +48,13 @@ namespace ConnectAPI
 
 
         // loại 2
-        public static bool InsertPeople(Student student)
+        public static bool InsertStudent(Student student)
         {
             bool result = false;
             RequestBase<bool> resultAPI = new RequestBase<bool>();
             try
             {
-                Uri urlapi = new Uri("https://localhost:44368/api/People/InsertData");
+                Uri urlapi = new Uri("https://localhost:7035/api/Student/InsertStudent");
                 using (var wc = new HttpClient())
                 {
                     var modelString = JsonConvert.SerializeObject(student);
@@ -74,13 +74,13 @@ namespace ConnectAPI
             }
             return result;
         }
-        public static bool EditPeople(Student editstudent)
+        public static bool EditStudent(Student editstudent)
         {
             bool result = false;
             RequestBase<bool> resultAPI = new RequestBase<bool>();
             try
             {
-                Uri urlapi = new Uri("https://localhost:44368/api/People/EditData");
+                Uri urlapi = new Uri("https://localhost:7035/api/Student/EditStudent");
                 using (var wc = new HttpClient())
                 {
                     var modelString = JsonConvert.SerializeObject(editstudent);
@@ -100,13 +100,13 @@ namespace ConnectAPI
             }
             return result;
         }
-        public static bool DeletePeople(int idStudent )
+        public static bool DeleteStudent(int idStudent )
         {
             bool result = false;
             RequestBase<bool> resultAPI = new RequestBase<bool>();
             try
             {
-                Uri urlapi = new Uri("https://localhost:44368/api/People/DeleteData");
+                Uri urlapi = new Uri("https://localhost:7035/api/Student/DeleteData");
                 string urlParameters = $"?id={idStudent}";
                 using (var wc = new HttpClient())
                 {
