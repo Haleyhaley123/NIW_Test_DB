@@ -47,7 +47,6 @@ namespace ConnectAPI
         }
 
 
-        // loại 2
         public static bool InsertStudent(Student student)
         {
             bool result = false;

@@ -232,7 +232,7 @@
             this.ClientSize = new System.Drawing.Size(989, 450);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Name = "fSubject";
+            //this.Name = "fSubject";
             this.Text = "fSubject";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

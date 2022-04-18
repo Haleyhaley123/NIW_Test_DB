@@ -41,6 +41,9 @@ builder.Services.AddCors(options =>
 });
 builder.Services.AddScoped<IStudentService,StudentService>();
 builder.Services.AddScoped<IStudentRepository,StudentRepository>();
+
+builder.Services.AddScoped<IScoreService, ScoreService>();
+builder.Services.AddScoped<IScoreRepository, ScoreRepository>();
 // Name Title
 builder.Services.AddSwaggerGen(c =>
 {

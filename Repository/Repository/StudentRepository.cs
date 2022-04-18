@@ -32,11 +32,11 @@ namespace Repository.Repository
         public bool EditStudent(Student EditStudent)
         {
             var paramT = new DynamicParameters();
-            paramT.Add("@ID", EditStudent.StudentId, System.Data.DbType.Int32);
-            paramT.Add("@Name", EditStudent.FullName, System.Data.DbType.String);
-            paramT.Add("@Gender", EditStudent.Address, System.Data.DbType.String);
-            paramT.Add("@Department", EditStudent.PhoneNumber, System.Data.DbType.String);
-            paramT.Add("@Birthday", EditStudent.Email, System.Data.DbType.DateTime);
+            paramT.Add("@StudentId", EditStudent.StudentId, System.Data.DbType.Int32);
+            paramT.Add("@FullName", EditStudent.FullName, System.Data.DbType.String);
+            paramT.Add("@Addrees", EditStudent.Address, System.Data.DbType.String);
+            paramT.Add("@PhoneNumber", EditStudent.PhoneNumber, System.Data.DbType.String);
+            paramT.Add("@Email", EditStudent.Email, System.Data.DbType.String);
 
             string sqlEdit = "StudentInsert";
             int Result = -100;
@@ -72,7 +72,6 @@ namespace Repository.Repository
             }
             Student student = new Student()
             {
-                StudentId = insertstudent.StudentId,
                 FullName = insertstudent.FullName,
                 Address = insertstudent.Address,
                 PhoneNumber = insertstudent.PhoneNumber,

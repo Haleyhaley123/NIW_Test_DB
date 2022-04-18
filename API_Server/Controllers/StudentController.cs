@@ -45,7 +45,7 @@ namespace API_Server.Controllers
             return requestBase;
         }
         [HttpGet]
-        [Route("GetPeople")]
+        [Route("GetStudent")]
         [ProducesResponseType(typeof(int), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [Consumes("application/json")]
@@ -130,7 +130,7 @@ namespace API_Server.Controllers
             return requestBase;
         }
         [HttpDelete]
-        [Route("DeleteData")]
+        [Route("DeleteStudent")]
         [ProducesResponseType(typeof(int), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [Consumes("application/json")]

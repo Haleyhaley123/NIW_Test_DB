@@ -143,5 +143,15 @@ namespace TestBD
                 MessageBox.Show("Edit failed Data");
             }
         }
+
+        private void btnEx_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

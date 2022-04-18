@@ -66,6 +66,9 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.txtStudentId = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.btnScoreForm = new System.Windows.Forms.Button();
+            this.btnSubjectForm = new System.Windows.Forms.Button();
             this.tabStudent.SuspendLayout();
             this.ShowStudent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgStudent)).BeginInit();
@@ -78,6 +81,7 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabStudent
@@ -93,6 +97,7 @@
             // ShowStudent
             // 
             this.ShowStudent.BackColor = System.Drawing.Color.PeachPuff;
+            this.ShowStudent.Controls.Add(this.panel9);
             this.ShowStudent.Controls.Add(this.dtgStudent);
             this.ShowStudent.Controls.Add(this.panel1);
             this.ShowStudent.Location = new System.Drawing.Point(4, 24);
@@ -105,6 +110,7 @@
             // 
             // dtgStudent
             // 
+            this.dtgStudent.BackgroundColor = System.Drawing.SystemColors.InactiveBorder;
             this.dtgStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgStudent.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.STT,
@@ -179,6 +185,7 @@
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnUpdate
             // 
@@ -201,6 +208,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.MistyRose;
             this.tabPage2.Controls.Add(this.panel2);
             this.tabPage2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tabPage2.Location = new System.Drawing.Point(4, 24);
@@ -209,10 +217,10 @@
             this.tabPage2.Size = new System.Drawing.Size(873, 427);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Add, Edit, Delete";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.SandyBrown;
             this.panel2.Controls.Add(this.panel8);
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.panel6);
@@ -253,6 +261,7 @@
             this.btnEx.TabIndex = 2;
             this.btnEx.Text = "Exit";
             this.btnEx.UseVisualStyleBackColor = true;
+            this.btnEx.Click += new System.EventHandler(this.btnEx_Click);
             // 
             // btnEdit
             // 
@@ -262,6 +271,7 @@
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
@@ -398,11 +408,38 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "StudentId:";
             // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.btnScoreForm);
+            this.panel9.Controls.Add(this.btnSubjectForm);
+            this.panel9.Location = new System.Drawing.Point(576, 39);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(278, 42);
+            this.panel9.TabIndex = 2;
+            // 
+            // btnScoreForm
+            // 
+            this.btnScoreForm.Location = new System.Drawing.Point(148, 16);
+            this.btnScoreForm.Name = "btnScoreForm";
+            this.btnScoreForm.Size = new System.Drawing.Size(109, 23);
+            this.btnScoreForm.TabIndex = 1;
+            this.btnScoreForm.Text = "Score Form";
+            this.btnScoreForm.UseVisualStyleBackColor = true;
+            // 
+            // btnSubjectForm
+            // 
+            this.btnSubjectForm.Location = new System.Drawing.Point(16, 16);
+            this.btnSubjectForm.Name = "btnSubjectForm";
+            this.btnSubjectForm.Size = new System.Drawing.Size(111, 23);
+            this.btnSubjectForm.TabIndex = 0;
+            this.btnSubjectForm.Text = "Subject Form";
+            this.btnSubjectForm.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 460);
+            this.ClientSize = new System.Drawing.Size(893, 460);
             this.Controls.Add(this.tabStudent);
             this.Name = "Form1";
             this.Text = "ShowStudent";
@@ -423,6 +460,7 @@
             this.panel3.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -467,5 +505,8 @@
         private Panel panel8;
         private TextBox txtStudentId;
         private Label label5;
+        private Panel panel9;
+        private Button btnScoreForm;
+        private Button btnSubjectForm;
     }
 }
