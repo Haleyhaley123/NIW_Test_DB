@@ -25,7 +25,12 @@
       "ProjectGuid": "195e5ef4-26b6-4fac-b529-afc7e34943ec",
       "DisplayName": "Repository",
       "ColorIndex": 4
+    },
+    "f33b1e48-0ff8-4426-8db2-f8992db8c95f": {
+      "ProjectGuid": "f33b1e48-0ff8-4426-8db2-f8992db8c95f",
+      "DisplayName": "ConnectAPI",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }

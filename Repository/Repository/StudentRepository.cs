@@ -24,7 +24,7 @@ namespace Repository.Repository
         {
             return await _dataBaseContext.Students.ToListAsync();
         }
-        public async Task<Student> GetStudentByID(int studentId)
+        public async Task<Student> GetStudentByID(Int64 studentId)
         {
             return await _dataBaseContext.Students.Where(x => x.StudentId == studentId).FirstOrDefaultAsync();
         }
@@ -32,22 +32,20 @@ namespace Repository.Repository
         public bool EditStudent(Student EditStudent)
         {
             var paramT = new DynamicParameters();
-            paramT.Add("@StudentId", EditStudent.StudentId, System.Data.DbType.Int32);
+            paramT.Add("@StudentId", EditStudent.StudentId, System.Data.DbType.Int64);
             paramT.Add("@FullName", EditStudent.FullName, System.Data.DbType.String);
-            paramT.Add("@Addrees", EditStudent.Address, System.Data.DbType.String);
+            paramT.Add("@Address", EditStudent.Address, System.Data.DbType.String);
             paramT.Add("@PhoneNumber", EditStudent.PhoneNumber, System.Data.DbType.String);
             paramT.Add("@Email", EditStudent.Email, System.Data.DbType.String);
 
-            string sqlEdit = "StudentInsert";
+            string sqlEdit = "EditStudent";
             int Result = -100;
             try
             {
                 var sReader = DapperManagerSQL.Instance.Conn.ExecuteReader(sqlEdit, paramT, commandType: CommandType.StoredProcedure);
                 while (sReader.Read())
                 {
-                    // chỉ trường được duy nhất SQL trả về Result = 1
                     Result = sReader["ResultSql"] == null ? 0 : int.Parse(sReader["ResultSql"].ToString());
-
                 }
             }
             catch (Exception ex)
@@ -92,7 +90,7 @@ namespace Repository.Repository
 
         }
 
-        public async Task<bool> DeleteStudent(int idStudent)
+        public async Task<bool> DeleteStudent(Int64 idStudent)
         {
             try
             {

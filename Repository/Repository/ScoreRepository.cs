@@ -32,7 +32,7 @@ namespace Repository.Repository
         public bool EditScore(Score EditScoreId)
         {
             var paramT = new DynamicParameters();
-            paramT.Add("@Score", EditScoreId.sCore, System.Data.DbType.String);;
+            paramT.Add("@Score", EditScoreId.sCore, System.Data.DbType.String);
 
             string sqlEdit = "ScoreInsert";
             int Result = -100;

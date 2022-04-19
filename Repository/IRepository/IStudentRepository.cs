@@ -10,9 +10,9 @@ namespace Repository.IRepository
     public interface  IStudentRepository
     {
         Task<List<Student>> GetStudent();
-        Task<Student> GetStudentByID(int studentId);
+        Task<Student> GetStudentByID(Int64 studentId);
         bool EditStudent(Student studentId);
         Task<bool> InsertStudent(Student insertstudent);
-        Task<bool> DeleteStudent(int idStudent);
+        Task<bool> DeleteStudent(Int64 idStudent);
     }
 }

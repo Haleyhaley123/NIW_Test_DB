@@ -40,7 +40,7 @@ namespace Domain.DBDapper
 
         private void ReConnect()
         {
-            _conn = new SqlConnection(@"Data source=ADMIN\SQLEXPRESS;initial catalog=TestSQL;persist security info=True;password=haley@400402;user id=sa;MultipleActiveResultSets=True;App=EntityFramework");
+            _conn = new SqlConnection(@"Data source=ADMIN\SQLEXPRESS;initial catalog=TestSQL;persist security info=True;password=haley@400402;user id=sa;TrustServerCertificate=True");
             _conn.Open();
         }
         public static DapperManagerSQL Instance
