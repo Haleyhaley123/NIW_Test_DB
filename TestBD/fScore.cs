@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace TestBD
 {
-    public partial class fScorecs : Form
+    public partial class fScore : Form
     {
-        public fScorecs()
+        public fScore()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,81 +29,47 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnShowSubject = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SubjectId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Delete = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnShowSubject = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnScore = new System.Windows.Forms.Button();
+            this.btnStudent = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(8, 10);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(555, 428);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnExit);
-            this.panel2.Controls.Add(this.btnUpdate);
-            this.panel2.Controls.Add(this.btnShowSubject);
-            this.panel2.Location = new System.Drawing.Point(14, 18);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(306, 32);
-            this.panel2.TabIndex = 0;
-            // 
-            // btnShowSubject
-            // 
-            this.btnShowSubject.Location = new System.Drawing.Point(3, 3);
-            this.btnShowSubject.Name = "btnShowSubject";
-            this.btnShowSubject.Size = new System.Drawing.Size(75, 23);
-            this.btnShowSubject.TabIndex = 0;
-            this.btnShowSubject.Text = "Show";
-            this.btnShowSubject.UseVisualStyleBackColor = true;
-            this.btnShowSubject.Click += new System.EventHandler(this.btnShowSubject_Click);
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Location = new System.Drawing.Point(106, 3);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdate.TabIndex = 1;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            this.btnUpdate.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Location = new System.Drawing.Point(216, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 2;
-            this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -145,6 +111,45 @@
             this.Delete.HeaderText = "";
             this.Delete.Name = "Delete";
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnExit);
+            this.panel2.Controls.Add(this.btnUpdate);
+            this.panel2.Controls.Add(this.btnShowSubject);
+            this.panel2.Location = new System.Drawing.Point(14, 18);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(306, 32);
+            this.panel2.TabIndex = 0;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(216, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(106, 3);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 1;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnShowSubject
+            // 
+            this.btnShowSubject.Location = new System.Drawing.Point(3, 3);
+            this.btnShowSubject.Name = "btnShowSubject";
+            this.btnShowSubject.Size = new System.Drawing.Size(75, 23);
+            this.btnShowSubject.TabIndex = 0;
+            this.btnShowSubject.Text = "Show";
+            this.btnShowSubject.UseVisualStyleBackColor = true;
+            this.btnShowSubject.Click += new System.EventHandler(this.btnShowSubject_Click);
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.panel5);
@@ -153,6 +158,40 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(417, 422);
             this.panel3.TabIndex = 1;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Location = new System.Drawing.Point(8, 8);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(406, 269);
+            this.panel5.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.label1);
+            this.panel6.Location = new System.Drawing.Point(9, 14);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(391, 57);
+            this.panel6.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(99, 17);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(274, 23);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Name:";
+            this.label1.UseWaitCursor = true;
             // 
             // panel4
             // 
@@ -191,39 +230,34 @@
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // panel5
+            // panel7
             // 
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(8, 8);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(406, 269);
-            this.panel5.TabIndex = 2;
+            this.panel7.Controls.Add(this.btnScore);
+            this.panel7.Controls.Add(this.btnStudent);
+            this.panel7.Location = new System.Drawing.Point(246, 68);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(306, 32);
+            this.panel7.TabIndex = 2;
             // 
-            // panel6
+            // btnScore
             // 
-            this.panel6.Controls.Add(this.textBox1);
-            this.panel6.Controls.Add(this.label1);
-            this.panel6.Location = new System.Drawing.Point(9, 14);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(391, 57);
-            this.panel6.TabIndex = 0;
+            this.btnScore.Location = new System.Drawing.Point(167, 6);
+            this.btnScore.Name = "btnScore";
+            this.btnScore.Size = new System.Drawing.Size(125, 23);
+            this.btnScore.TabIndex = 1;
+            this.btnScore.Text = "ScoreForm";
+            this.btnScore.UseVisualStyleBackColor = true;
+            this.btnScore.Click += new System.EventHandler(this.btnScore_Click);
             // 
-            // label1
+            // btnStudent
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Name:";
-            this.label1.UseWaitCursor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(99, 17);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(274, 23);
-            this.textBox1.TabIndex = 1;
+            this.btnStudent.Location = new System.Drawing.Point(3, 3);
+            this.btnStudent.Name = "btnStudent";
+            this.btnStudent.Size = new System.Drawing.Size(138, 23);
+            this.btnStudent.TabIndex = 0;
+            this.btnStudent.Text = "Student Form";
+            this.btnStudent.UseVisualStyleBackColor = true;
+            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
             // 
             // fSubject
             // 
@@ -235,13 +269,14 @@
             //this.Name = "fSubject";
             this.Text = "fSubject";
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -268,5 +303,8 @@
         private Button btnDelete;
         private Button btnEdit;
         private Button btnAdd;
+        private Panel panel7;
+        private Button btnScore;
+        private Button btnStudent;
     }
 }

@@ -72,7 +72,7 @@ namespace API_Server.Controllers
             return requestBase;
         }
         [HttpPut]
-        [Route("EditScore")]
+        [Route("EditSubject")]
         [ProducesResponseType(typeof(int), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [Consumes("application/json")]

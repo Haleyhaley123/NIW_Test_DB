@@ -1,11 +1,11 @@
-using ConnectAPI;
+﻿using ConnectAPI;
 using Domain;
 
 namespace TestBD
 {
-    public partial class Form1 : Form
+    public partial class fStudent : Form
     {
-        public Form1()
+        public fStudent()
         {
             InitializeComponent();
         }
@@ -39,10 +39,10 @@ namespace TestBD
                     dtgStudent.Rows[count].Cells[2].Value = item.Address;
                     dtgStudent.Rows[count].Cells[3].Value = item.PhoneNumber;
                     dtgStudent.Rows[count].Cells[4].Value = item.Email;
-                    dtgStudent.Rows[count].Cells[7].Value = "Edit";
-                    dtgStudent.Rows[count].Cells[7].Style.ForeColor = Color.Red;
-                    dtgStudent.Rows[count].Cells[8].Value = "Delete";
-                    dtgStudent.Rows[count].Cells[8].Style.ForeColor = Color.Yellow;
+                    dtgStudent.Rows[count].Cells[5].Value = "Edit";
+                    dtgStudent.Rows[count].Cells[5].Style.ForeColor = Color.Red;
+                    dtgStudent.Rows[count].Cells[6].Value = "Delete";
+                    dtgStudent.Rows[count].Cells[6].Style.ForeColor = Color.Yellow;
                     count++;
                 }
 
@@ -53,7 +53,6 @@ namespace TestBD
         {
 
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
@@ -109,7 +108,7 @@ namespace TestBD
             DialogResult Result = MessageBox.Show("Do you want to delete?", "Notification", MessageBoxButtons.OKCancel);
             if (Result == DialogResult.OK)
             {
-                bool isInsert = StudentConnectAPI.DeleteStudent(Int32.Parse(txtStudentId.Text));
+                bool isInsert = StudentConnectAPI.DeleteStudent(Int64.Parse(txtStudentId.Text));
                 if (isInsert)
                 {
                     MessageBox.Show("Delete success data");
@@ -127,6 +126,7 @@ namespace TestBD
 
             var student = new Student()
             {
+                StudentId = Int64.Parse(txtStudentId.Text),
                 FullName = txtFullName.Text,
                 Address = txtAddress.Text,
                 PhoneNumber = txtNumberPhone.Text,
@@ -152,6 +152,62 @@ namespace TestBD
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnSubjectForm_Click(object sender, EventArgs e)
+        {
+            fSubject fs = new fSubject();
+            this.Hide();
+            fs.ShowDialog();
+        }
+
+        private void btnScoreForm_Click(object sender, EventArgs e)
+        {
+            fScore fc = new fScore();
+            this.Hide();
+            fc.ShowDialog();
+        }
+
+        //Edit
+        private void dtgStudent_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            {
+                // Sửa
+                if (e.RowIndex >= 0 && e.ColumnIndex == 5)
+                {
+                    if (dtgStudent[0, e.RowIndex].Value == null)
+                    {
+                        return;
+                    }
+                    else
+
+                    {
+                        tabStudent.SelectedIndex = 1;
+                        int i;
+                        i = e.RowIndex;
+                        txtStudentId.Text = dtgStudent.Rows[i].Cells[0].Value.ToString();
+                        txtFullName.Text = dtgStudent.Rows[i].Cells[1].Value.ToString();
+                        txtAddress.Text = dtgStudent.Rows[i].Cells[2].Value.ToString();
+                        txtNumberPhone.Text = dtgStudent.Rows[i].Cells[3].Value.ToString();
+                        txtEmail.Text = dtgStudent.Rows[i].Cells[4].Value.ToString();
+                    }
+                }
+                //Xóa
+
+                if (e.RowIndex >= 0 && e.ColumnIndex == 6)
+                {
+                    if (dtgStudent[0, e.RowIndex].Value == null)
+                    {
+                        return;
+                    }
+
+                    tabStudent.SelectedIndex = 1;
+                    int i;
+                    i = e.RowIndex;
+                    txtStudentId.Text = dtgStudent.Rows[i].Cells[0].Value.ToString();
+                }
+            }
+
         }
     }
 }

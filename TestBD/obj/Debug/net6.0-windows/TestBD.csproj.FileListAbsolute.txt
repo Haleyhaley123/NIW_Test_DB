@@ -22,7 +22,6 @@ C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\TestB
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\ref\TestBD.dll
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\TestBD.pdb
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.csproj.AssemblyReference.cache
-C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.Form1.resources
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.csproj.GenerateResource.cache
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.AssemblyInfoInputs.cache
@@ -32,7 +31,6 @@ C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestB
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\ref\TestBD.dll
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.pdb
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.genruntimeconfig.cache
-C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.fScorecs.resources
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.fSubject.resources
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\Azure.Core.dll
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\Azure.Identity.dll
@@ -278,3 +276,5 @@ C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\Domai
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\ConnectAPI.pdb
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\bin\Debug\net6.0-windows\Domain.pdb
 C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.csproj.CopyComplete
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.fScore.resources
+C:\Users\Admin\Desktop\Git File\NIW\TestDB\TestBD\obj\Debug\net6.0-windows\TestBD.fStudent.resources
