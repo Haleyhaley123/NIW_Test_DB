@@ -20,7 +20,7 @@ namespace Service.Service
         {
             return await _iScoreRepository.GetScore();
         }
-        public async Task<Score> GetScoreByID(int scoreId)
+        public async Task<Score> GetScoreByID(Int64 scoreId)
         {
             return await _iScoreRepository.GetScorebyId(scoreId);
         }
@@ -32,7 +32,7 @@ namespace Service.Service
         {
             return await _iScoreRepository.InsertScore(insertscore);
         }
-        public async Task<bool> DeleteScore(int scoreId)
+        public async Task<bool> DeleteScore(Int64 scoreId)
         {
             return await _iScoreRepository.DeleteScore(scoreId);
         }

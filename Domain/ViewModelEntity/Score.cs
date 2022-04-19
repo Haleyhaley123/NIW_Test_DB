@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,12 @@ namespace Domain
     [Table("cat_Score")]
     public class Score
     {
-       public int ScoreId { get; set; }
+        [Key]
+       public Int64 ScoreId { get; set; }
 
-       public int StudentId { get; set; }   
+       public Int64 StudentId { get; set; }   
 
-       public int SubjectId { get; set; }  
+       public Int64 SubjectId { get; set; }  
         
        public int sCore { get; set; }
     }

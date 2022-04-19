@@ -10,64 +10,64 @@ namespace API_Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ScoreController : APIController
+    public class SubjectController : APIController
     {
-        private readonly IScoreService _iScoreService;
-        public ScoreController(IScoreService iScoreService)
+        private readonly ISubjectService _iSubjectService;
+        public SubjectController(ISubjectService iSubjectService)
         {
-            _iScoreService = iScoreService;
+            _iSubjectService = iSubjectService;
         }
         [HttpGet]
-        [Route("GetAllSCore")]
+        [Route("GetAllSubject")]
         [ProducesResponseType(typeof(int), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [Consumes("application/json")]
-        public async Task<ActionResult<RequestBase<List<Score>>>> GetAllScore()
+        public async Task<ActionResult<RequestBase<List<Subject>>>> GetSubject()
         {
-            var requestBase = new RequestBase<List<Score>>();
+            var requestBase = new RequestBase<List<Subject>>();
             try
             {
-                var result = await _iScoreService.GetScore();
+                var result = await _iSubjectService.GetSubject();
                 if (result != null)
                 {
-                    requestBase = RequestOK<List<Score>>(result);
+                    requestBase = RequestOK<List<Subject>>(result);
                 }
                 else
                 {
-                    requestBase = NotFound<List<Score>>();
+                    requestBase = NotFound<List<Subject>>();
                 }
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"ServerError:{ex.Message}");
-                requestBase = ServerError<List<Score>>();
+                requestBase = ServerError<List<Subject>>();
             }
             return requestBase;
         }
         [HttpGet]
-        [Route("GetScore")]
+        [Route("GetSubject")]
         [ProducesResponseType(typeof(int), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [Consumes("application/json")]
-        public async Task<ActionResult<RequestBase<Score>>> GetScore(int scoreId)
+        public async Task<ActionResult<RequestBase<Subject>>> GetSubjectById(Int64 subjectId)
         {
-            var requestBase = new RequestBase<Score>();
+            var requestBase = new RequestBase<Subject>();
             try
             {
-                var result = await _iScoreService.GetScoreByID(scoreId);
+                var result = await _iSubjectService.GetSubjectById(subjectId);
                 if (result != null)
                 {
-                    requestBase = RequestOK<Score>(result);
+                    requestBase = RequestOK<Subject>(result);
                 }
                 else
                 {
-                    requestBase = NotFound<Score>();
+                    requestBase = NotFound<Subject>();
                 }
             }
             catch (Exception ex)
             {
                 Debug.WriteLine($"ServerError:{ex.Message}");
-                requestBase = ServerError<Score>();
+                requestBase = ServerError<Subject>();
             }
             return requestBase;
         }
@@ -76,12 +76,12 @@ namespace API_Server.Controllers
         [ProducesResponseType(typeof(int), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [Consumes("application/json")]
-        public async Task<ActionResult<RequestBase<bool>>> EditScore(Score scoreId)
+        public async Task<ActionResult<RequestBase<bool>>> EditSubject(Subject subjectId)
         {
             var requestBase = new RequestBase<bool>();
             try
             {
-                var result = await _iScoreService.EditScore(scoreId);
+                var result = await _iSubjectService.EditSubject(subjectId);
                 if (result)
                 {
                     requestBase = RequestOK<bool>(result);
@@ -99,20 +99,20 @@ namespace API_Server.Controllers
             return requestBase;
         }
         [HttpPost]
-        [Route("InsertScore")]
+        [Route("InsertSubject")]
         [ProducesResponseType(typeof(int), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [Consumes("application/json")]
-        public async Task<ActionResult<RequestBase<bool>>> InsertScore(Score insertscore)
+        public async Task<ActionResult<RequestBase<bool>>> InsertSubject(Subject insertsubject)
         {
-            if (insertscore == null || insertscore.StudentId < 0)
+            if (insertsubject == null || insertsubject.SubjectId < 0)
             {
                 return BadRequest<bool>();
             }
             var requestBase = new RequestBase<bool>();
             try
             {
-                var result = await _iScoreService.InsertScore(insertscore);
+                var result = await _iSubjectService.InsertSubject(insertsubject);
                 if (result)
                 {
                     requestBase = RequestOK<bool>(result);
@@ -130,16 +130,16 @@ namespace API_Server.Controllers
             return requestBase;
         }
         [HttpDelete]
-        [Route("DeleteScore")]
+        [Route("DeleteSubject")]
         [ProducesResponseType(typeof(int), (int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.BadRequest)]
         [Consumes("application/json")]
-        public async Task<ActionResult<RequestBase<bool>>> DeleteScore(int scoreId)
+        public async Task<ActionResult<RequestBase<bool>>> DeleteSubject(Int64 subjectId)
         {
             var requestBase = new RequestBase<bool>();
             try
             {
-                var result = await _iScoreService.DeleteScore(scoreId);
+                var result = await _iSubjectService.DeleteSubject(subjectId);
                 if (result)
                 {
                     requestBase = RequestOK<bool>(result);

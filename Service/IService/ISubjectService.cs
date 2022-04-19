@@ -10,9 +10,9 @@ namespace Service.IService
     public interface ISubjectService
     {
         Task<List<Subject>> GetSubject();
-        Task<Subject> GetSubjectByID(int subjectId);
-        Task<bool> EditScore(Subject subjectId);
-        Task<bool> InsertScore(Subject insertsubject);
-        Task<bool> DeleteScore(int subjectId);
+        Task<Subject> GetSubjectById(Int64 subjectId);
+        Task<bool> EditSubject(Subject subjectId);
+        Task<bool> InsertSubject(Subject insertsubject);
+        Task<bool> DeleteSubject(Int64 subjectId);
     }
 }

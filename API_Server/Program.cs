@@ -44,6 +44,9 @@ builder.Services.AddScoped<IStudentRepository,StudentRepository>();
 
 builder.Services.AddScoped<IScoreService, ScoreService>();
 builder.Services.AddScoped<IScoreRepository, ScoreRepository>();
+
+builder.Services.AddScoped<ISubjectService, SubjectService>();
+builder.Services.AddScoped<ISubjectRepository, SubjectRepository>();
 // Name Title
 builder.Services.AddSwaggerGen(c =>
 {

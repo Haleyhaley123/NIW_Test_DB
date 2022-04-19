@@ -1,14 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Domain
 {
+    [Table("cat_Subject")]
     public class Subject
     {
-       public int SubjectId { get; set; }   
+        [Key]
+       public Int64 SubjectId { get; set; }   
        public string Name { get; set; }
 
     }

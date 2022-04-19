@@ -10,9 +10,9 @@ namespace Repository.IRepository
     public interface IScoreRepository
     {
         Task<List<Score>> GetScore();
-        Task<Score> GetScorebyId(int ScoreId);
+        Task<Score> GetScorebyId(Int64 ScoreId);
         bool EditScore(Score EditScoreId);
         Task<bool> InsertScore(Score insertscore);
-        Task<bool> DeleteScore(int deleteScoreId);
+        Task<bool> DeleteScore(Int64 deleteScoreId);
     }
 }

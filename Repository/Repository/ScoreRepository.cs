@@ -24,7 +24,7 @@ namespace Repository.Repository
         {
             return await _dataBaseContext.Scores.ToListAsync();
         }
-        public async Task<Score> GetScorebyId(int ScoreId)
+        public async Task<Score> GetScorebyId(Int64 ScoreId)
         {
             return await _dataBaseContext.Scores.Where(x => x.ScoreId == ScoreId).FirstOrDefaultAsync();
         }
@@ -32,16 +32,19 @@ namespace Repository.Repository
         public bool EditScore(Score EditScoreId)
         {
             var paramT = new DynamicParameters();
-            paramT.Add("@Score", EditScoreId.sCore, System.Data.DbType.String);
+            paramT.Add("@ScoreId", EditScoreId.sCore, System.Data.DbType.Int64);
+            paramT.Add("@StudentId", EditScoreId.sCore, System.Data.DbType.Int64);
+            paramT.Add("@SubjectId", EditScoreId.sCore, System.Data.DbType.Int64);
+            paramT.Add("@Score", EditScoreId.sCore, System.Data.DbType.Int32);
 
-            string sqlEdit = "ScoreInsert";
+            string sqlEdit = "EditScore";
             int Result = -100;
             try
             {
                 var sReader = DapperManagerSQL.Instance.Conn.ExecuteReader(sqlEdit, paramT, commandType: CommandType.StoredProcedure);
                 while (sReader.Read())
                 {
-                    // chỉ trường được duy nhất SQL trả về Result = 1
+                   
                     Result = sReader["ResultSql"] == null ? 0 : int.Parse(sReader["ResultSql"].ToString());
 
                 }
@@ -88,7 +91,7 @@ namespace Repository.Repository
 
         }
 
-        public async Task<bool> DeleteScore(int deleteScoreId)
+        public async Task<bool> DeleteScore(Int64 deleteScoreId)
         {
             try
             {

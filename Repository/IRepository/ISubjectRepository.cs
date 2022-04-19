@@ -10,9 +10,9 @@ namespace Repository.IRepository
     public interface ISubjectRepository
     {
         Task<List<Subject>> GetSubject();
-        Task<Subject> GetSubjectbyID(int subjectId);
+        Task<Subject> GetSubjectbyId(Int64 subjectId);
         bool EditSubject(Subject editSubjectId);
         Task<bool> InsertSubject(Subject insertsubject);
-        Task<bool> DeleteSubject(int deletesubject);
+        Task<bool> DeleteSubject(Int64 deletesubject);
     }
 }

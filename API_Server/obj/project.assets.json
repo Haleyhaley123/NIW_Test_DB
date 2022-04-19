@@ -3226,7 +3226,8 @@
           "Dapper": "2.0.123",
           "Microsoft.EntityFrameworkCore": "7.0.0-preview.3.22175.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0-preview.3.22175.1",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.0-preview.3.22212.3"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.0-preview.3.22212.3",
+          "System.Runtime": "4.3.1"
         },
         "compile": {
           "bin/placeholder/Domain.dll": {}
